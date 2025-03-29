@@ -33,5 +33,8 @@ int main()
    
    //Le tableau contient maintenant les nombres : 2 2 2 8 7 14
 
+   tableau.pop_back(); //Et hop ! dernière case en moins
+   tableau.pop_back(); //Et hop ! 1 case une case en moins
+
    return 0;
 }
