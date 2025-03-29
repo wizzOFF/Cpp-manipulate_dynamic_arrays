@@ -25,5 +25,9 @@ int main()
    meilleursScores[3] = 64523;   //Remplissage de la quatrième case
    meilleursScores[4] = 31415;   //Remplissage de la cinquième case
 
+   vector<int> tableau(3,2);  //Un tableau de 3 entiers valant tous 2
+   tableau.push_back(8);
+   //On ajoute une 4ème case au tableau qui contient la valeur 8
+   
    return 0;
 }
