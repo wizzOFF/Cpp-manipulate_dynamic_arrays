@@ -1,6 +1,9 @@
 
 #include <iostream>
-#include <vector> //Ne pas oublier !
+//#include <vector> //Ne pas oublier !
+
+#include <string>
+
 using namespace std;
 
 int main()
@@ -71,7 +74,7 @@ int main()
    int const tailleY(4);
    int tableau[tailleX][tailleY];
    */
-
+   /*
    vector<vector<int> > grille;
 
    grille.push_back(vector<int>(5));   //On ajoute une ligne de 5 cases à notre grille
@@ -80,6 +83,16 @@ int main()
    grille[0].push_back(8);     //Ajoute une case contenant 8 à la première ligne du tableau
 
    grille[2][3] = 9;     //Change la valeur de la cellule (2,3) de la grille
-   
+   */
+
+
+   string nomUtilisateur("Julien");
+   cout << "Vous etes " << nomUtilisateur << "." <<endl;
+
+   nomUtilisateur[0] = 'L';  //On modifie la première lettre
+   nomUtilisateur[2] = 'c';  //On modifie la troisième lettre
+
+   cout << "Ah non, vous etes " << nomUtilisateur << "!" << endl;
+
    return 0;
 }
