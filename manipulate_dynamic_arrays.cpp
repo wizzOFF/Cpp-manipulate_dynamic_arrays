@@ -85,7 +85,7 @@ int main()
    grille[2][3] = 9;     //Change la valeur de la cellule (2,3) de la grille
    */
 
-
+   /*
    string nomUtilisateur("Julien");
    cout << "Vous etes " << nomUtilisateur << "." <<endl;
 
@@ -93,6 +93,11 @@ int main()
    nomUtilisateur[2] = 'c';  //On modifie la troisième lettre
 
    cout << "Ah non, vous etes " << nomUtilisateur << "!" << endl;
+   */
+
+
+   string texte("Portez ce whisky au vieux juge blond qui fume.");  //46 caractères
+   cout << "Cette phrase contient " << texte.size() << " lettres." << endl;
 
    return 0;
 }
