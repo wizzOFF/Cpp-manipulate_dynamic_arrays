@@ -36,13 +36,35 @@ int main()
    tableau.pop_back(); //Et hop ! dernière case en moins
    tableau.pop_back(); //Et hop ! 1 case une case en moins
    */
-
+   /* 
    vector<int> tableau(5,4); //Un tableau de 5 entiers valant tous 4
    int const taille(tableau.size());
    //Une variable qui contient la taille du tableau
    //La taille peut varier mais la valeur de cette variable ne changera pas
    //On utilise donc une constante
    //À partir d'ici, la constante 'taille' vaut donc 5
+   */
+
+   vector<double> notes; //Un tableau vide
+
+   notes.push_back(12.5);  //On ajoute des cases avec les notes
+   notes.push_back(19.5);
+   notes.push_back(6);
+   notes.push_back(12);
+   notes.push_back(14.5);
+   notes.push_back(15);
+   
+   double moyenne(0);
+   for(int i(0); i<notes.size(); ++i)
+   //On utilise notes.size() pour la limite de notre boucle
+   {
+      moyenne += notes[i];   //On additionne toutes les notes
+   }
+
+   moyenne /= notes.size();
+   //On utilise à nouveau notes.size() pour obtenir le nombre de notes
+   
+   cout << "Votre moyenne est : " << moyenne << endl;
 
    return 0;
 }
