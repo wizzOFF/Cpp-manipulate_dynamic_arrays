@@ -44,7 +44,7 @@ int main()
    //On utilise donc une constante
    //À partir d'ici, la constante 'taille' vaut donc 5
    */
-
+   /*
    vector<double> notes; //Un tableau vide
 
    notes.push_back(12.5);  //On ajoute des cases avec les notes
@@ -65,6 +65,11 @@ int main()
    //On utilise à nouveau notes.size() pour obtenir le nombre de notes
    
    cout << "Votre moyenne est : " << moyenne << endl;
+   */
+
+   int const tailleX(5);
+   int const tailleY(4);
+   int tableau[tailleX][tailleY];
 
    return 0;
 }
