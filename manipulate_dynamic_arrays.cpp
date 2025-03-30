@@ -66,10 +66,20 @@ int main()
    
    cout << "Votre moyenne est : " << moyenne << endl;
    */
-
+   /*
    int const tailleX(5);
    int const tailleY(4);
    int tableau[tailleX][tailleY];
+   */
 
+   vector<vector<int> > grille;
+
+   grille.push_back(vector<int>(5));   //On ajoute une ligne de 5 cases à notre grille
+   grille.push_back(vector<int>(3,4)); //On ajoute une ligne de 3 cases contenant chacune le nombre 4 à notre grille
+
+   grille[0].push_back(8);     //Ajoute une case contenant 8 à la première ligne du tableau
+
+   grille[2][3] = 9;     //Change la valeur de la cellule (2,3) de la grille
+   
    return 0;
 }
